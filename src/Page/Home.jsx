@@ -1,6 +1,7 @@
 import React from "react";
 import { BsBuilding } from "react-icons/bs";
 import Navbar from "../Components/Navbar";
+import Slider from "../Components/Slider";
 
 function Home() {
   return (
@@ -80,6 +81,10 @@ function Home() {
             className="min-h-[600px] rounded object-cover object-center"
           />
         </div>
+      </div>
+      <div className="my-20 py-10 bg-gray-900 ">
+        <h1 className="max-w-7xl mx-auto font-secondary text-4xl font-semibold mb-8 text-white">Works Showcase</h1>
+        <Slider />
       </div>
     </>
   );
