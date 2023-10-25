@@ -82,9 +82,41 @@ function Home() {
           />
         </div>
       </div>
-      <div className="my-20 py-10 bg-gray-900 ">
-        <h1 className="max-w-7xl mx-auto font-secondary text-4xl font-semibold mb-8 text-white">Works Showcase</h1>
+      <div className="mt-20 py-10 pb-20 bg-gray-900 ">
+        <h1 className="max-w-7xl mx-auto font-secondary text-4xl font-semibold mb-8 text-white">
+          Works Showcase
+        </h1>
         <Slider />
+      </div>
+      <div className="bg-[whitesmoke] py-16">
+        <div className="max-w-7xl mx-auto grid grid-cols-4 gap-4">
+          <div className="col-span-2 pr-3 pb-3 flex flex-col justify-center">
+            <h3 className="text-4xl font-secondary font-semibold mb-3">
+              Featured Services
+            </h3>
+            <p className="font-primary text-sm text-gray-800 tracking-wide">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+              sed architecto molestiae dolor, ducimus exercitationem tempora,
+              quibusdam eum placeat nihil velit labore numquam laborum fugiat
+              nulla quidem dolores dolorum maiores!
+            </p>
+          </div>
+          {[0, 1, 2, 3, 4, 5].map((val) => (
+            <div
+              key={val}
+              className=" space-y-2 shadow p-4 min-h-[250px] flex flex-col justify-end border-2 hover:border-blue-400 group hover:bg-blue-400 rounded transition-colors "
+            >
+              <BsBuilding className=" text-5xl mb-4 text-blue-500 group-hover:text-[whitesmoke]" />
+              <h2 className="text-xl font-secondary font-medium group-hover:text-[whitesmoke]">
+                Lorem ipsum
+              </h2>
+              <p className="font-primary text-xs text-gray-700 group-hover:text-[whitesmoke]">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui,
+                vitae.
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
