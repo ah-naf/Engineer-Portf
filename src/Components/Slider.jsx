@@ -7,16 +7,6 @@ import "swiper/css/pagination";
 import { Controller, FreeMode } from "swiper/modules";
 
 const Slider = () => {
-  const params = {
-    slidesPerView: 3,
-    spaceBetween: 30,
-
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  };
-
   return (
     <div>
       <Swiper
@@ -37,8 +27,12 @@ const Slider = () => {
               alt=""
             />
             <div className="absolute group-hover:w-full hover:cursor-pointer group-hover:h-full hidden group-hover:flex flex-col justify-end p-4 bg-[rgba(0,0,0,0.5)] top-0">
-              <p className="text-gray-300 font-semibold mb-1 font-primary text-sm">Construction, Work</p>
-              <h1 className="text-[whitesmoke] font-secondary text-2xl font-medium">Interior Design</h1>
+              <p className="text-gray-300 font-semibold mb-1 font-primary text-sm">
+                Construction, Work
+              </p>
+              <h1 className="text-[whitesmoke] font-secondary text-2xl font-medium">
+                Interior Design
+              </h1>
             </div>
           </SwiperSlide>
         ))}

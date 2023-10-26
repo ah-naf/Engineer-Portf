@@ -1,6 +1,9 @@
 import React from "react";
-import { BsBuilding } from "react-icons/bs";
+import { AiOutlineFacebook, AiOutlineMail } from "react-icons/ai";
+import { BiLocationPlus } from "react-icons/bi";
+import { BsBuilding, BsPhone } from "react-icons/bs";
 import Navbar from "../Components/Navbar";
+import ReviewSlider from "../Components/ReviewSlider";
 import Slider from "../Components/Slider";
 
 function Home() {
@@ -116,6 +119,82 @@ function Home() {
               </p>
             </div>
           ))}
+        </div>
+      </div>
+      <div className="bg-gray-900 py-20">
+        <div className="grid grid-cols-5 items-center ml-auto gap-8">
+          <div className="col-span-2 max-w-md ml-auto">
+            <h3 className="text-gray-200 mb-4 font-primary font-bold text-sm">
+              WHAT PEOPLE SAY
+            </h3>
+            <h1 className="text-white mb-4 text-4xl font-secondary font-semibold">
+              {"Client's"} Talk
+            </h1>
+            <p className="text-gray-300 font-primary text-sm tracking-wide">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              fugit adipisci, accusantium, dicta soluta odio eius vero quisquam
+              animi maiores deleniti ab reprehenderit possimus? Nisi impedit
+              voluptate eius non quas.
+            </p>
+          </div>
+          <div className="col-span-3">
+            <ReviewSlider />
+          </div>
+        </div>
+      </div>
+      <div className="bg-[whitesmoke] py-16">
+        <div className="max-w-7xl mx-auto flex justify-between">
+          <div>
+            <h1 className="text-3xl font-secondary font-bold">LOGO</h1>
+          </div>
+          <div className="space-y-2">
+            <h3 className="font-secondary text-2xl font-medium mb-4">Office</h3>
+            <p className="flex items-center gap-3 text-sm font-primary">
+              <span>
+                <BsPhone size={18} />
+              </span>
+              +880183787
+            </p>
+            <p className="flex items-center gap-3 text-sm font-primary">
+              <span>
+                <AiOutlineMail size={18} />
+              </span>
+              test@test.com
+            </p>
+            <p className="flex  gap-3 text-sm font-primary">
+              <span>
+                <BiLocationPlus size={18} />
+              </span>
+              2231 REDBUD DRIVE <br /> WHITESTONE, NY 11357
+            </p>
+          </div>
+          <div className="space-y-2">
+            <h3 className="font-secondary text-2xl font-medium mb-4">
+              Quick Links
+            </h3>
+            <p className="text-sm font-primary">Home</p>
+            <p className="text-sm font-primary">About</p>
+            <p className="text-sm font-primary">Contact Us</p>
+          </div>
+          <div>
+            <h3 className="font-secondary text-2xl font-medium mb-4">
+              Social Links
+            </h3>
+            <div className="space-x-2 flex text-xl">
+              <span className="border p-2 border-gray-500 rounded-full">
+                <AiOutlineFacebook />
+              </span>
+              <span className="border p-2 border-gray-500 rounded-full">
+                <AiOutlineFacebook />
+              </span>
+              <span className="border p-2 border-gray-500 rounded-full">
+                <AiOutlineFacebook />
+              </span>
+              <span className="border p-2 border-gray-500 rounded-full">
+                <AiOutlineFacebook />
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </>
