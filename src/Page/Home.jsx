@@ -4,6 +4,7 @@ import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import ReviewSlider from "../Components/ReviewSlider";
 import Slider from "../Components/Slider";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -73,7 +74,7 @@ function Home() {
             laboriosam quisquam quos maiores repellat nulla!
           </p>
           <button className="mt-10 border p-3 px-5 rounded-xl border-blue-400 font-primary font-medium hover:bg-blue-400 hover:text-white">
-            Learn More
+            <Link to={'/about'}>Learn More</Link>
           </button>
         </div>
         <div className="basis-[52%]">

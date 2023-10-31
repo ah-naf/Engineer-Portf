@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -10,9 +11,15 @@ function Navbar() {
       </div>
       <div className="flex items-center ml-16 flex-grow">
         <div className="space-x-4 font-medium">
-          <button className="hover:underline">HOME</button>
-          <button className="hover:underline">ABOUT</button>
-          <button className="hover:underline">CONTACT US</button>
+          <button className="hover:underline">
+            <Link to={"/"}>HOME</Link>
+          </button>
+          <button className="hover:underline">
+            <Link to={'/about'}>ABOUT</Link>
+          </button>
+          <button className="hover:underline">
+            <Link to={'/contact-us'}>CONTACT US</Link>
+          </button>
         </div>
         <div className="flex items-center ml-auto space-x-6 tracking-wider">
           <div className="flex items-center">
